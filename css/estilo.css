@@ -1,0 +1,392 @@
+/*GENERAL*/
+body {font-family: 'Almarai', sans-serif;}
+
+.img-fluid {width: 100%; height: auto;}
+.p20 {padding: 20px;}
+.m20 {margin: 20px;}
+.mb20 {margin-bottom: 20px;}
+h1 {color: goldenrod;margin: 0px;}
+
+/*INICIO*/
+
+
+/*HEADER Y FOOTER*/
+header nav ul li {list-style-type: none;margin-left: 25px; padding: 20px; margin: 20px;}
+header nav ul li a {text-decoration: none; color: black; font-weight: bold; margin: 80px,0,0,500px}
+header, footer {background-color:gold}
+header div img {width: 10%; height: auto;}
+
+
+/*DESKTOP*/
+/*INICIO*/
+@media screen and (min-width:1024px){
+.grid {display: grid; 
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto auto;}
+
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+header, ul {display: flex; flex-direction: row;}
+footer {display: flex; flex-direction: column; align-items: center;}
+header {display: flex; flex-direction: row; align-items: center; justify-content: space-between; background-color: gold;}
+.jCSpaceBetween{justify-content: space-between;}
+.Gridmaininicio { display: grid;
+    grid-template-areas:
+    "tituloinicio tituloinicio"
+    "subtituloinicio subtituloinicio"
+    "imageninicio imageninicio"
+    "ohanapub ohanabar"
+    "ibarovero centro"
+    "preguntainicio preguntainicio"
+    "irclientes irclientes";
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 50% 50%;
+    
+}
+.tituloinicio{grid-area: tituloinicio;}
+.subtituloinicio{grid-area: subtituloinicio;}
+.imageninicio{grid-area: imageninicio;}
+.ohanapub{grid-area: ohanapub;}
+.ohanabar{grid-area: ohanabar;}
+.ibarovero{grid-area: ibarovero;}
+.centro{grid-area: centro;}
+.preguntainicio{grid-area: preguntainicio;}
+.irclientes{grid-area: irclientes;}
+   /*HEADER*/
+header div img {width: 220px ; padding: 20px 0px 20px 30px; } 
+  /*MAIN INICIO*/
+.clientesinicio{display: flex;flex-wrap: nowrap; flex-direction: row; justify-content: space-between;}
+.centro, .ohanabar, .ohanapub, .ibarovero{width: 50%; height: auto;}
+h1 {color: goldenrod; text-align: center; font-size: 50px; margin: 0px;}
+.subtituloinicio{text-align: center; margin: 0px 0px 20px 0px; font-size: 35px;} 
+.preguntainicio{text-align: center; margin: 1%; font-size: 35px;}
+.irclientes {text-align: center; margin: 0px 0px 100px 0px;} 
+.boton {background-color: gold; padding: 20px; text-decoration: none; color: black;}
+    /*FOOTER*/
+    .contactofooter {font-size: 25px ; text-align: center; font-weight: bold;
+    margin: 1px 0px 1px 0px}
+    .mailfooter {font-size: 20px; text-align: center; margin-top: 0; margin: 0.5px 0px 0.5px 0px}
+    footer a {font-size: 20px; margin: 1px 0 1px 0}
+
+/*SERVICIOS*/
+
+    .gridservicios{display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+.todosservicios {display: grid;
+    grid-template-areas:
+    "tituloservicio tituloservicio"
+    "subtituloservicio subtituloservicio"
+    "descripcionservicio descripcionservicio"
+    "ibranding iconsultoria"
+    "branding consultoria"
+    "brandingdes consultoriades"
+    "isocial idiseño"
+    "social diseño"
+    "socialdes diseñodes";
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 50% 50%;    
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+    .tituloservicio{grid-area: tituloservicio;}
+    .subtituloservicio{grid-area: subtituloservicio;}
+    .descripcionservicio{grid-area: descripcionservicio;}
+    .ibranding{grid-area: ibranding;}
+    .iconsultoria{grid-area: iconsultoria;}
+    .branding{grid-area: branding;}
+    .consultoria{grid-area: consultoria;}
+    .isocial{grid-area: isocial;}
+    .idiseño{grid-area: idiseño;}
+    .social{grid-area: social;}
+    .diseño{grid-area: diseño;}
+    .brandingdes{grid-area: brandingdes;}
+    .consultoriades{grid-area: consultoriades;}
+    .socialdes{grid-area: socialdes;}
+    .diseñodes{grid-area: diseñodes;}
+
+    /*MAIN SERVICIO*/
+ .tituloservicio, .subtituloservicio, .descripcionservicio,.ibranding,.iconsultoria,.branding,.consultoria,
+ .social, .diseño, .isocial, .idiseño, .brandingdes, .consultoriades, .socialdes, .diseñodes{display: flex; flex-direction: row; justify-content: center;}
+    .consultoria {font-size: 15px;}
+    .tituloservicio{padding: 3% 3% 0% 3%;}
+    .subtituloservicio{font-size: 22px;}
+    .descripcionservicio{font-size: 25px;}
+    .diseño, .social, .branding, .consultoria{font-size: 20px;}
+    .socialdes,.consultoriades,.brandingdes,.diseñodes{font-size: 20px;}
+    /*CLIENTES*/
+.Gridmainclientes { display: grid;
+    grid-template-areas:
+    "tituloclientes tituloclientes"
+    "iohanapub iohanabar"
+    "ohanapubtitulo ohanabartitulo"
+    "ohanapubdes ohanabardes"
+    "icentro ibarova"
+    "centrotitulo barotitulo"
+    "centrodes barovades";
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 50% 50%;    
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);}
+
+    .tituloclientes{grid-area: tituloclientes;}
+    .iohanapub{grid-area: iohanapub;}
+    .iohanabar{grid-area: iohanabar;}
+    .ohanapubtitulo{grid-area: ohanapubtitulo;}
+    .ohanabartitulo{grid-area: ohanabartitulo;}
+    .ohanapubdes{grid-area: ohanapubdes;}
+    .ohanabardes{grid-area: ohanabardes;}
+    .icentro{grid-area: icentro;}
+    .ibarova{grid-area: ibarova;}
+    .centrotitulo{grid-area: centrotitulo;}
+    .barotitulo{grid-area: barotitulo;}
+    .centrodes{grid-area: centrodes;}
+    .barovades{grid-area: barovades;}
+
+
+.tituloclientes{padding: 3%;}
+.ohanabartitulo, .ohanapubtitulo, .centrotitulo, .barotitulo{font-size: 30px; display: flex; flex-direction: row; justify-content: center;}
+.ohanabardes, .ohanapubdes, .centrodes, .barovades{font-size: 20px; display: flex; flex-direction: row; justify-content: center;}
+.iohanapub, .iohanabar, .icentro,.ibarova {width: 5%; height: auto; align-items: center;}
+
+/*NOSOTROS*/
+.gridnosotros {display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+.header {grid-area: header;}
+.main {grid-area: main;}
+.footer {grid-area: footer;}
+
+.gridmainnosotros {display: grid;
+    grid-template-areas:
+    "titulonosotros"
+    "parrafonosotros"
+    "mapsnosotros";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;    
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);}
+
+    .titulonosotros {grid-area: titulonosotros;}
+    .parrafonosotros{grid-area: parrafonosotros;}
+    .mapsnosotros {grid-area: mapsnosotros;}
+
+    .titulonosotros, .parrafonosotros, .mapsnosotros{display: flex; flex-direction: row; justify-content: center;}
+    .mapsnosotros{padding: 3%;}
+    p{text-align: center; font-size: 40px; font-weight: lighter; background-position: center; color: rgb(0, 0, 0); margin-left: 200px; margin-right: 200px; }
+
+/*CONTACTO*/
+
+.gridcontacto {display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+.header {grid-area: header;}
+.main {grid-area: main;}
+.footer {grid-area: footer;}
+
+.Gridmaincontacto {display: grid;
+    grid-template-areas:
+    "titulocontacto titulocontacto"
+    "subtitulocontacto subtitulocontacto"
+    "formcontacto direccion"
+    "formcontacto alem"
+    "formcontacto datos"
+    "formcontacto datos2"
+    "formcontacto datos3"
+    "formcontacto datos4";
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-columns: 50% 50%;}   
+    
+
+    .titulocontacto {grid-area: titulocontacto;}
+    .subtitulocontacto{grid-area: subtitulocontacto;}
+    .formcontacto {grid-area: formcontacto;}
+    .direccion{grid-area: direccion;}
+    .alem{grid-area: alem;}
+    .datos{grid-area: datos;}
+    .datos2{grid-area: datos2;}
+    .datos3{grid-area: datos3;}
+    .datos4{grid-area: datos4;}
+
+    /*CONTACTO*/
+.formcontacto {text-align: center; margin: 2%; background-color: whitesmoke; }
+main div form label, .sector, .mkt, .diseñog {font-size: 20px; font-weight: bold; margin-bottom: 20px;}
+main div form input {background-color: gold;}
+h3 {color: goldenrod; text-align: center;}
+.titulocontacto, .subtitulocontacto, .formcontacto, .direccion, .alem, .datos, .datos2, .datos3, .datos4{display: flex; flex-direction: row; justify-content: center;}
+
+}
+/*MOBILE*/
+@media screen and (max-width:768px) {
+    header{display: flex; flex-direction: column; align-items: center; background-color: gold;}
+    ul{display: flex; flex-direction: row; justify-content: center; padding-left: 0px;} 
+    li{padding: 1px; margin: 1px;}
+    main{display: flex; flex-direction: column; align-items: center;}
+
+    /*HEADER*/
+    header nav ul li{margin: 0; padding: 3px; font-size: 10px;}
+    header div img {width: 120px ; padding: 20px 0px 10px 5px; } 
+
+    /*FOOTER*/
+    .contactofooter {font-size: 9px ; text-align: center; font-weight: bold;
+        margin: 1px 1px 5px 1px}
+        .mailfooter {font-size: 8px; text-align: center; margin-top: 0; margin: 1px 1px 5px 1px}
+        footer a {font-size: 8px; margin: 0 0 5px 0}
+        footer a {display:flex; flex-direction: row; justify-content: center;}
+    
+    /*MAIN INICIO*/
+    
+.subtituloinicio{text-align: center; margin: 0px 0px 20px 0px;font-size: 10px;} 
+.preguntainicio{text-align: center; margin: 5%; font-size: 10px;}
+.irclientes {text-align: center; margin: 0px 0px 50px 0px;} 
+.boton {background-color: gold; padding: 10px; text-decoration: none; color: black; font-size: 15px;}
+.centro, .ohanabar, .ohanapub, .ibarovero{width: 100%; height: auto;}
+
+
+    /*MAIN CLIENTES*/
+    .Gridmainclientes { display: grid;
+        grid-template-areas:
+        "tituloclientes"
+        "iohanapub"
+        "ohanapubtitulo"
+        "ohanapubdes"
+        "iohanabar"
+        "ohanabartitulo"
+        "ohanabardes"
+        "icentro"
+        "centrotitulo"
+        "centrodes"
+        "ibarova"
+        "barotitulo"
+        "barovades";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 100%;    
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+        grid-template-columns: repeat(2,1fr);}
+        
+        .tituloclientes{grid-area: tituloclientes;}
+        .iohanapub{grid-area: iohanapub;}
+        .iohanabar{grid-area: iohanabar;}
+        .ohanapubtitulo{grid-area: ohanapubtitulo;}
+        .ohanabartitulo{grid-area: ohanabartitulo;}
+        .ohanapubdes{grid-area: ohanapubdes;}
+        .ohanabardes{grid-area: ohanabardes;}
+        .icentro{grid-area: icentro;}
+        .ibarova{grid-area: ibarova;}
+        .centrotitulo{grid-area: centrotitulo;}
+        .barotitulo{grid-area: barotitulo;}
+        .centrodes{grid-area: centrodes;}
+        .barovades{grid-area: barovades;}
+
+        .flexmainclientes{display: flex; flex-direction: column; justify-content: center;}
+        .tituloclientes{padding: 3%;font-size: 20px;}
+        .ohanabartitulo, .ohanapubtitulo, .centrotitulo, .barotitulo{font-size: 17px;}
+        .ohanabardes, .ohanapubdes, .centrodes, .barovades{font-size: 15px;}
+        
+   /*MAIN SERVICIO*/
+   .tituloservicio, .subtituloservicio, .descripcionservicio,.ibranding,.iconsultoria,.branding,.consultoria,
+   .social, .diseño, .isocial, .idiseño, .brandingdes, .consultoriades, .socialdes, .diseñodes{display: flex; flex-direction: row; justify-content: center;}
+   
+   
+   /*NOSOTROS*/
+    .gridnosotros {display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+
+    .header {grid-area: header;}
+    .main {grid-area: main;}
+    .footer {grid-area: footer;}
+    
+    .Gridmainnosotros {display: grid;
+        grid-template-areas:
+        "titulonosotros"
+        "parrafonosotros"
+        "mapsnosotros";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;    
+}
+    .titulonosotros {grid-area: titulonosotros;}
+    .parrafonosotros{grid-area: parrafonosotros;}
+    .mapsnosotros {grid-area: mapsnosotros;}
+
+    .mapsnosotros{padding: 3%;}
+    p {text-align: center; font-size: 10px; font-weight: lighter; background-position: center; color: rgb(0, 0, 0);}
+    .titulonosotros, .parrafonosotros, .mapsnosotros{display: flex; flex-direction: row; justify-content: center;} 
+  
+   /*CONTACTO*/
+
+.gridcontacto {display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;}
+.header {grid-area: header;}
+.main {grid-area: main;}
+.footer {grid-area: footer;}
+
+.Gridmaincontacto {display: grid;
+    grid-template-areas:
+    "titulocontacto"
+    "subtitulocontacto"
+    "formcontacto"
+    "direccion"
+    "alem"
+    "datos";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 100%;}   
+    
+
+    .titulocontacto {grid-area: titulocontacto;}
+    .subtitulocontacto{grid-area: subtitulocontacto;}
+    .formcontacto {grid-area: formcontacto;}
+    .direccion{grid-area: direccion;}
+    .alem{grid-area: alem;}
+    .datos{grid-area: datos;}
+ 
+      /*NUESTROS CLIENTES*/
+      .imohanabar, .imohanapub, .imcentro, .imbarova {width: 100%; height: auto;}
+    
+    .formcontacto {text-align: center; padding: 4.5em 3em; margin: auto; background-color: whitesmoke; }
+    main div form label, .sector, .mkt, .diseñog {font-size: 20px; font-weight: bold; margin-bottom: 20px;}
+    main div form input {background-color: gold;}
+    h3 {color: goldenrod; text-align: center;}
+    .titulocontacto, .subtitulocontacto, .formcontacto, .direccion, .alem, .datos, .datos2, .datos3, .datos4{display: flex; flex-direction: row; justify-content: center;}
+}
+    
+
+ 
+
+
+
+
+
+
+
